@@ -18,86 +18,65 @@
   </style>
 </head>
 <body>
+<div id="supremo">
   <!--Columnas de precio-->
-<div id="" class="">
-  <h2>Our Pricing</h2>
-  <!-- Rounded switch -->
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label>
-  <!--Boton que cambia los precios-->
-  <button id="btnPrice" onclick="tooglePrice()">Anually</button>
-</div>
-
-<!--CONTENEDOR QUE ENCIERRA LOS COMPONENTES-->
-<div id="contenedorPrincipal">
-  <!--Primera columna-->
-  <div id="primeraColumna" class="columnas">
-    <div id="" class="contenedor-columna">
-      <h3>Basic</h3>
-      <p id="basic-price" class="precio">&dollar;19.99</p>
-      <p>500 GB Storage</p>
-      <p>2 Users Allowed</p>
-      <p>Send up to 3 GB</p>
-      <button type="button">Learn More</button>
+  <div id="encabezado" class="">
+    <h2>Our Pricing</h2>
+    <div id="contenedor-opciones" class="">
+      <!--Opcion anualidad-->
+      <label class="opciones">Annually</label>
+      <!-- Rounded switch -->
+      <label class="switch">
+        <input id="checkInput" type="checkbox" checked onclick="tooglePrice()">
+        <span class="slider round"></span>
+      </label>
+      <!--Opcion mensualidad-->
+      <label class="opciones">Monthly</label>
     </div>
   </div>
-  <!--Segunda columna-->
-  <div id="segundaColumna" class="columnas">
-    <div id="" class="contenedor-columna">
-      <h3>Professional</h3>
-      <p id="professional-price"class="precio">&dollar;24.99</p>
-      <p>1 TB Storage</p>
-      <p>5 Users Allowed</p>
-      <p>Send up to 10 GB</p>
-      <button type="button">Learn More</button>
-    </div>
-  </div>
-  <!--Tercera columna-->
-  <div id="terceraColumna" class="columnas">
-    <div id="" class="contenedor-columna">
-      <h3>Master</h3>
-      <p id="master-price" class="precio">&dollar;39.99</p>
-      <p>2 TB Storage</p>
-      <p>10 Users Allowed</p>
-      <p>Send up to 20 GB</p>
-      <button type="button">Learn More</button>
-    </div>
-  </div>
-</div>
-  <!-- Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jean Carlos Sánchez</a>.
+  <!--CONTENEDOR QUE ENCIERRA LOS COMPONENTES-->
+  <div id="contenedorPrincipal">
+    <!--Primera columna-->
+    <div id="primeraColumna" class="columnas">
+      <div id="" class="contenedor-columna">
+        <h3>Basic</h3>
+        <p id="basic-price" class="precio">&dollar;19.99</p>
+        <p>500 GB Storage</p>
+        <p>2 Users Allowed</p>
+        <p>Send up to 3 GB</p>
+        <button type="button">Learn More</button>
+      </div>
+    </div>
+    <!--Segunda columna-->
+    <div id="segundaColumna" class="columnas">
+      <div id="" class="contenedor-columna">
+        <h3>Professional</h3>
+        <p id="professional-price"class="precio">&dollar;24.99</p>
+        <p>1 TB Storage</p>
+        <p>5 Users Allowed</p>
+        <p>Send up to 10 GB</p>
+        <button type="button">Learn More</button>
+      </div>
+    </div>
+    <!--Tercera columna-->
+    <div id="terceraColumna" class="columnas">
+      <div id="" class="contenedor-columna">
+        <h3>Master</h3>
+        <p id="master-price" class="precio">&dollar;39.99</p>
+        <p>2 TB Storage</p>
+        <p>10 Users Allowed</p>
+        <p>Send up to 20 GB</p>
+        <button type="button">Learn More</button>
+      </div>
+    </div>
   </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Jean Carlos Sánchez</a>.
+    </div>
+</div>
+
   <script src="scripts.js"></script>
 </body>
 </html>

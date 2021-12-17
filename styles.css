@@ -6,6 +6,7 @@ body {
 #contenedorPrincipal {
     display: flex;
     justify-content: center;
+    padding: 4%;
 }
 
 /*COLUMNAS*/
@@ -14,6 +15,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    /* border-style: solid; */
 }
 
 .columnas p {
@@ -29,6 +31,7 @@ body {
 /*SEGUNDA COLUMNA*/
 #segundaColumna {
     background-color: hsl(237, 63%, 64%);
+    transform: scale(1.1);
 }
 
 #segundaColumna p {
@@ -65,7 +68,7 @@ h3 {
 
 /*BOTON "LEARN MORE" DE CADA COLUMNA*/
 .contenedor-columna button {
-    width: 100%;
+    width: 80%;
     padding: 8px;
     border-radius: 5px;
     border-style: none;
@@ -81,6 +84,26 @@ h3 {
     cursor: pointer;
 }
 
+/*POSICIONAMIENTO DE ENCABEZADO*/
+#encabezado {
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+#encabezado h2 {
+  text-align: center;
+  color: hsl(232, 13%, 33%);
+}
+#contenedor-opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contenedor-opciones .opciones {
+  padding: 15px;
+  color: hsl(232, 13%, 33%);
+}
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -92,8 +115,8 @@ h3 {
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
-    width: 0;
-    height: 0;
+    width: 60px;
+    height: 34px;
   }
   
   /* The slider */
@@ -107,6 +130,9 @@ h3 {
     background-color: hsl(237, 63%, 64%);
     -webkit-transition: .4s;
     transition: .4s;
+  }
+  .slider:hover {
+    opacity: 0.3;
   }
   .slider:before {
     position: absolute;
@@ -141,4 +167,53 @@ h3 {
   
   .slider.round:before {
     border-radius: 50%;
-  }  
+  }
+
+  /*FOOTER*/
+
+  .attribution {
+    margin-top: 50px;
+  }
+
+  /*RESPONSIVE DESIGN*/
+  @media (max-width: 768px) {
+
+    #supremo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* #encabezado {
+      width: 100%;
+    }*/
+    #contenedorPrincipal {
+        flex-direction: column;
+    }
+
+    #segundaColumna {
+      transform: none;
+    }
+
+    .columnas {
+      width: 70%;
+      align-self: center;
+    }
+}
+
+@media (max-width: 375px) {
+
+  #encabezado {
+    width: 70%;
+    align-self: center;
+  }
+
+  #supremo {
+    width: 100%;
+  }
+
+  .columnas {
+    width: 100%;
+  }
+}
